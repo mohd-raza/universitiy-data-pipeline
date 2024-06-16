@@ -1,0 +1,18 @@
+[2024-06-16T00:33:36.978+0530] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-16T00:33:37.013+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_university_api_send_psql.wait_for_json manual__2024-06-15T19:03:17.699454+00:00 [queued]>
+[2024-06-16T00:33:37.027+0530] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_university_api_send_psql.wait_for_json manual__2024-06-15T19:03:17.699454+00:00 [queued]>
+[2024-06-16T00:33:37.027+0530] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-06-16T00:33:37.072+0530] {taskinstance.py:2330} INFO - Executing <Task(PythonSensor): wait_for_json> on 2024-06-15 19:03:17.699454+00:00
+[2024-06-16T00:33:37.080+0530] {standard_task_runner.py:63} INFO - Started process 333499 to run task
+[2024-06-16T00:33:37.083+0530] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'get_university_api_send_psql', 'wait_for_json', 'manual__2024-06-15T19:03:17.699454+00:00', '--job-id', '96', '--raw', '--subdir', 'DAGS_FOLDER/main.py', '--cfg-path', '/tmp/tmpsqz9mcr8']
+[2024-06-16T00:33:37.088+0530] {standard_task_runner.py:91} INFO - Job 96: Subtask wait_for_json
+[2024-06-16T00:33:37.171+0530] {task_command.py:426} INFO - Running <TaskInstance: get_university_api_send_psql.wait_for_json manual__2024-06-15T19:03:17.699454+00:00 [running]> on host Mohammed-Raza.
+[2024-06-16T00:33:37.299+0530] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='get_university_api_send_psql' AIRFLOW_CTX_TASK_ID='wait_for_json' AIRFLOW_CTX_EXECUTION_DATE='2024-06-15T19:03:17.699454+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-15T19:03:17.699454+00:00'
+[2024-06-16T00:33:37.303+0530] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-16T00:33:37.327+0530] {python.py:75} INFO - Poking callable: <function _wait_for_json at 0x7fbd9e916950>
+[2024-06-16T00:33:37.327+0530] {base.py:294} INFO - Success criteria met. Exiting.
+[2024-06-16T00:33:37.327+0530] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-16T00:33:37.338+0530] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=get_university_api_send_psql, task_id=wait_for_json, run_id=manual__2024-06-15T19:03:17.699454+00:00, execution_date=20240615T190317, start_date=20240615T190337, end_date=20240615T190337
+[2024-06-16T00:33:37.420+0530] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-16T00:33:37.464+0530] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-06-16T00:33:37.477+0530] {local_task_job_runner.py:222} INFO - ::endgroup::
